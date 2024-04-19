@@ -1,8 +1,12 @@
 import React from 'react';
 import logo from './logo.png'; // Adjust the path to the logo file if necessary
 import './FrontPage.css'; // Importing CSS file for styles
+import { fetchPatientDetails } from './patient';
 
 function FrontPage() {
+    const handlePatientManagementClick = () => {
+        fetchPatientDetails(); // Calling fetchPatientDetails function from patient.js
+    };
     return (
         <div className="front-page">
             {/* Hero section */}
@@ -23,7 +27,7 @@ function FrontPage() {
             <div className="features-section" id="features">
                 <h2>Our Features</h2>
                 <div className="features-cards">
-                    <div className="feature-card">
+                    <div className="feature-card" onClick={handlePatientManagementClick}>
                         <h3>Patient Management</h3>
                         <p>Streamlined patient management for better care continuity.</p>
                     </div>
