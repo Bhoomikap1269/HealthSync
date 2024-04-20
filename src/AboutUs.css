@@ -1,0 +1,188 @@
+/* About Us Page Styling */
+.about-us-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center the heading */
+    padding: 20px; /* Padding around the content */
+    max-width: 800px; /* Maximum width for readability */
+    margin: 0 auto; /* Center the container */
+}
+
+.about-us-heading {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.about-us-description {
+    font-size: 1.2rem;
+    color: #666;
+    line-height: 1.5;
+    text-align: center; 
+}
+
+
+/* Features section */
+.features-section {
+    margin-bottom: 40px;
+}
+
+.features-section h2 {
+    text-align: center;
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.features-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Three equal-width columns */
+    grid-template-rows: auto auto; /* Two rows */
+    gap: 20px; /* Space between cards */
+    justify-items: center; /* Center items in each grid cell */
+}
+
+.feature-card {
+    padding: 15px;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px; /* Rounded corners */
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+    cursor: pointer;
+}
+
+.feature-card:hover {
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Slightly stronger shadow on hover */
+    transform: translateY(-5px); /* Lift the card on hover */
+}
+
+.feature-card h3 {
+    font-size: 1.5rem;
+    color: #007bff; /* Change title color */
+    margin-bottom: 10px;
+}
+
+.feature-card p {
+    font-size: 1rem;
+    color: #666;
+}
+
+.features-cards .feature-card:nth-child(4) {
+    grid-column: 1 / 2; 
+    grid-row: 2; 
+}
+
+.features-cards .feature-card:nth-child(5) {
+    grid-column: 2 / 3; 
+    grid-row: 2;
+}
+
+
+/* Testimonials section */
+.testimonials-section {
+    margin-bottom: 40px;
+}
+
+.testimonials-section h2 {
+    text-align: center;
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.testimonials-cards {
+    display: flex;
+    justify-content: space-around;
+}
+
+.testimonial-card {
+    padding: 15px;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: 45%;
+}
+
+.testimonial-card p {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.testimonial-card strong {
+    color: #333;
+}
+
+/* Team section styling */
+.team-section {
+    margin-top: 40px; /* Add some space above the team section */
+    padding: 20px;
+    background-color: #f8f9fa; /* Light background color */
+    border-radius: 8px;
+}
+
+.team-section h2 {
+    font-size: 2rem;
+    color: #333;
+    text-align: center; /* Center the heading */
+    margin-bottom: 20px; /* Add some space below the heading */
+}
+
+.team-cards {
+    display: flex;
+    flex-wrap: wrap; /* Allow the cards to wrap onto multiple lines if necessary */
+    justify-content: center; /* Center the cards horizontally */
+    gap: 20px; /* Space between the cards */
+}
+
+.team-card {
+    background-color: white; /* White background for each card */
+    border: 1px solid #e0e0e0; /* Light gray border */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle box shadow */
+    width: 200px; /* Fixed width for each card */
+    padding: 20px; /* Padding inside each card */
+    text-align: center; /* Center the text inside the card */
+    transition: transform 0.2s ease-in-out; /* Smooth hover transition */
+}
+
+.team-card:hover {
+    transform: translateY(-5px); /* Lift the card slightly on hover */
+}
+
+.team-photo {
+    width: 100%; /* Make the photo span the full width of the card */
+    height: auto; /* Preserve the aspect ratio */
+    border-radius: 50%; /* Make the photo circular */
+    margin-bottom: 10px; /* Add some space below the photo */
+}
+
+.team-card h3 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 5px; /* Add a bit of space below the name */
+}
+
+.team-card p {
+    font-size: 1rem;
+    color: #666;
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px; /* Adjust padding as needed */
+}
+/* Styles for navigation links */
+.navigation-links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-right {
+    margin-left: auto;
+}
+

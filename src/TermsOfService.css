@@ -1,0 +1,31 @@
+/* TermsOfService.css */
+
+body {
+    background-color: #b3d9ff; /* Light blue background */
+}
+
+.terms-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.terms-container h2 {
+    color: #333;
+    text-align: center; /* Center-align the heading */
+}
+
+.terms-container p {
+    color: #666;
+    line-height: 1.6;
+    text-align: left; /* Align paragraphs to the left */
+}
+
+.terms-container a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.terms-container a:hover {
+    text-decoration: underline;
+}
