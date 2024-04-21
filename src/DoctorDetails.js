@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import './DoctorDetails.css';
+import axios from 'axios';
+
 
 function DoctorDetails() {
     // Sample doctor details data
