@@ -1,4 +1,5 @@
 import sqlite3
+from sqlite3 import Error  # Add this line to import Error class
 from flask import Flask, request, jsonify
 from flask_cors import CORS
 from werkzeug.security import generate_password_hash, check_password_hash
@@ -12,7 +13,7 @@ def create_connection():
     try:
         conn = sqlite3.connect('users.db')
         return conn
-    except Error as e:
+    except Error as e:  
         print(e)
     return conn
 

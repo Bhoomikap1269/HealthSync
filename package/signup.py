@@ -1,15 +1,26 @@
 from flask import Flask, request, jsonify
 from flask_sqlalchemy import SQLAlchemy
+import pandas as pd
 
 app = Flask(__name__)
-app.config['SQLALCHEMY_DATABASE_URI'] = ''  # SQLite database
+app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///mydatabase.db'  # SQLite database
 db = SQLAlchemy(app)
 
+# Read the CSV file
+df = pd.read_csv('data.csv')
+
+# Create the database tables
 class User(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     username = db.Column(db.String(50), unique=True, nullable=False)
     email = db.Column(db.String(100), unique=True, nullable=False)
     password = db.Column(db.String(100), nullable=False)
+
+# Insert the data into the tables
+for row in df.itertuples(index=True):
+    new_user = User(username=row.username, email=row.email, password=row.password)
+    db.session.add(new_user)
+    db.session.commit()
 
 @app.route('/signup', methods=['POST'])
 def signup():
