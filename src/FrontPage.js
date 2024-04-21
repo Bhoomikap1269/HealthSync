@@ -1,5 +1,5 @@
 import React from 'react';
-<<<<<<< HEAD
+
 import { useNavigate } from 'react-router-dom';
 import logo from './logo.png';
 import './FrontPage.css';
@@ -23,7 +23,7 @@ function FrontPage() {
         }
     };
 
-=======
+
 import logo from './logo.png'; // Adjust the path to the logo file if necessary
 import './FrontPage.css'; // Importing CSS file for styles
 import { fetchPatientDetails } from './patient';
@@ -32,7 +32,7 @@ function FrontPage() {
     const handlePatientManagementClick = () => {
         fetchPatientDetails(); // Calling fetchPatientDetails function from patient.js
     };
->>>>>>> e56f6e1fba3841b23042b4e39a4c5b9da0f3ad7e
+
     return (
         <div className="front-page">
             {/* Hero section */}
@@ -45,7 +45,7 @@ function FrontPage() {
                 <h1>Welcome to HealthSync</h1>
                 <p>Streamlining Healthcare Management for Optimal Patient Care</p>
 
-<<<<<<< HEAD
+
                 {/* Authentication buttons */}
                 <div className="auth-buttons">
                     <button className="cta-button" onClick={handleSignUpClick}>
@@ -54,7 +54,7 @@ function FrontPage() {
                     <button className="cta-button" onClick={handleLoginClick}>
                         Login
                     </button>
-=======
+
                 {/* Call-to-action button */}
                 <button className="cta-button">Get Started</button>
             </div>
@@ -83,7 +83,7 @@ function FrontPage() {
                         <h3>Analytics and Reporting</h3>
                         <p>Data analytics for efficient resource allocation and decision-making.</p>
                     </div>
->>>>>>> e56f6e1fba3841b23042b4e39a4c5b9da0f3ad7e
+
                 </div>
             </div>
 
