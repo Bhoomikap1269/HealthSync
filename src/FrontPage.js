@@ -34,7 +34,6 @@ function FrontPage() {
                 <h1>Welcome to HealthSync</h1>
                 <p>Streamlining Healthcare Management for Optimal Patient Care</p>
 
-<<<<<<< HEAD
                 {/* Authentication buttons */}
                 <div className="auth-buttons">
                     <button className="cta-button" onClick={handleSignUpClick}>
@@ -43,36 +42,6 @@ function FrontPage() {
                     <button className="cta-button" onClick={handleLoginClick}>
                         Login
                     </button>
-=======
-                {/* Call-to-action button */}
-                <button className="cta-button">Get Started</button>
-            </div>
-
-            {/* Features section */}
-            <div className="features-section" id="features">
-                <h2>Our Features</h2>
-                <div className="features-cards">
-                    <div className="feature-card" onClick={handlePatientManagementClick}>
-                        <h3>Patient Management</h3>
-                        <p>Streamlined patient management for better care continuity.</p>
-                    </div>
-                    <div className="feature-card">
-                        <h3>Electronic Health Records</h3>
-                        <p>Secure and easy access to patient health records.</p>
-                    </div>
-                    <div className="feature-card">
-                        <h3>Appointment Scheduling</h3>
-                        <p>Convenient online appointment scheduling for patients.</p>
-                    </div>
-                    <div className="feature-card">
-                        <h3>Billing and Payment Processing</h3>
-                        <p>Automated billing and seamless payment processing.</p>
-                    </div>
-                    <div className="feature-card">
-                        <h3>Analytics and Reporting</h3>
-                        <p>Data analytics for efficient resource allocation and decision-making.</p>
-                    </div>
->>>>>>> b715b2d3ccaf52229d0225ec1aff52fb95db8e99
                 </div>
             </div>
 
