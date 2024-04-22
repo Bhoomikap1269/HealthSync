@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import './DoctorDetails.css';
+import axios from 'axios';
+
 
 function DoctorDetails() {
     // Sample doctor details data
@@ -16,6 +18,16 @@ function DoctorDetails() {
 
     // Use useEffect to set the doctor details data
     useEffect(() => {
+        const fetchDoctorDetails = async () => {
+            try {
+                const response = await axios.get('/api/doctors'); // Make GET request to fetch doctor details
+                setDoctorDetails(response.data); // Set doctor details state with data from the response
+            } catch (error) {
+                console.error('Error fetching doctor details:', error);
+            }
+        };
+
+        fetchDoctorDetails();
         // Simulating fetching doctor details from an API endpoint
         setDoctorDetails(doctorDetailsData);
     }, []);

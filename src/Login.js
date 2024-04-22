@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
+import axios from 'axios'; // Import axios for making HTTP requests
 import { FaUser, FaLock, FaArrowLeft } from 'react-icons/fa';
 import './Login.css';
 
@@ -9,7 +10,7 @@ function Login() {
     const [errors, setErrors] = useState({});
     const navigate = useNavigate();
 
-    const handleLogin = (event) => {
+    const handleLogin = async (event) => {
         event.preventDefault();
         // Perform form validation
         const newErrors = {};
@@ -24,11 +25,16 @@ function Login() {
 
         // If there are no errors, proceed with login
         if (Object.keys(newErrors).length === 0) {
-            // Handle login (e.g., sending data to an API)
-            console.log('Logging in:', { username, password });
-
-            // Navigate to another page after successful login (if needed)
-            navigate('/dashboard');
+            try {
+                const response = await axios.post('/api/login', { username, password });
+                console.log(response.data);
+                // Navigate to another page after successful login (if needed)
+                navigate('/dashboard');
+            } catch (error) {
+                console.error('Login failed:', error.response.data);
+                // Handle login error
+                setErrors({ login: 'Invalid username or password' });
+            }
         }
     };
 
