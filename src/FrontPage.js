@@ -1,5 +1,4 @@
 import React from 'react';
-<<<<<<< HEAD
 import { useNavigate } from 'react-router-dom';
 import logo from './logo.png';
 import './FrontPage.css';
@@ -23,16 +22,6 @@ function FrontPage() {
         }
     };
 
-=======
-import logo from './logo.png'; // Adjust the path to the logo file if necessary
-import './FrontPage.css'; // Importing CSS file for styles
-import { fetchPatientDetails } from './patient';
-
-function FrontPage() {
-    const handlePatientManagementClick = () => {
-        fetchPatientDetails(); // Calling fetchPatientDetails function from patient.js
-    };
->>>>>>> b715b2d3ccaf52229d0225ec1aff52fb95db8e99
     return (
         <div className="front-page">
             {/* Hero section */}
