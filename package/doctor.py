@@ -16,6 +16,7 @@ class Doctors(Resource):
         """Add the new doctor"""
 
         doctorInput = request.get_json(force=True)
+        
         doc_name=doctorInput['name']
         doc_specialization = doctorInput['specialization']
         doc_exp = doctorInput['experience']

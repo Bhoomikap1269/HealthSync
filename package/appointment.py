@@ -1,5 +1,6 @@
 from flask_restful import Resource, Api, request
 from package.model import conn
+from receipt import generate_receipt
 
 
 
