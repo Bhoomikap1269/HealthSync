@@ -1,17 +1,17 @@
-/* General styling */
+
 .front-page {
-    background-color: #f0f8ff; /* Light blue background color */
-    min-height: 100vh; /* Ensures the page takes up the full viewport height */
+    background-color: #f0f8ff; 
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
-    justify-content: space-between; /* Evenly distribute content, including footer */
+    justify-content: space-between; 
     padding: 20px;
 }
 
-/* Hero section */
+
 .hero-section {
-    text-align: center; /* Centers the text in the hero section */
-    margin-bottom: 40px; /* Adds space between hero section and other content */
+    text-align: center; 
+    margin-bottom: 40px; 
 }
 
 .logo-container {
@@ -19,11 +19,11 @@
     justify-content: center;
     align-items: center;
     width: 100%;
-    margin-bottom: 20px; /* Adjust spacing as needed */
+    margin-bottom: 20px; 
 }
 
 .logo {
-    width: 200px; /* Adjust the width of the logo */
+    width: 200px; 
     height: auto;
 }
 
@@ -39,14 +39,13 @@ p {
     margin-bottom: 30px;
 }
 
-/* Authentication buttons container */
+
 .auth-buttons {
     display: flex;
-    justify-content: center; /* Center the buttons */
-    gap: 15px; /* Adds space between the buttons */
+    justify-content: center; 
+    gap: 15px; 
 }
 
-/* Call-to-action button styling */
 .cta-button {
     padding: 10px 20px;
     background-color: #007bff;
@@ -58,10 +57,10 @@ p {
 }
 
 .cta-button:hover {
-    background-color: #0056b3; /* Darker shade on hover */
+    background-color: #0056b3; 
 }
 
-/* Footer section */
+
 .footer {
     background-color: #e0e0e0;
     padding: 15px;

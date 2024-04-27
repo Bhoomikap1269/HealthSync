@@ -1,7 +1,5 @@
-/* TermsOfService.css */
-
 body {
-    background-color: #b3d9ff; /* Light blue background */
+    background-color: #b3d9ff; 
 }
 
 .terms-container {
@@ -12,13 +10,13 @@ body {
 
 .terms-container h2 {
     color: #333;
-    text-align: center; /* Center-align the heading */
+    text-align: center; 
 }
 
 .terms-container p {
     color: #666;
     line-height: 1.6;
-    text-align: left; /* Align paragraphs to the left */
+    text-align: left; 
 }
 
 .terms-container a {

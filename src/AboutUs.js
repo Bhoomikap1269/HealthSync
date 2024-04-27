@@ -5,10 +5,9 @@ import './AboutUs.css';
 
 
 function AboutUs() {
-    // Add the handlePatientManagementClick function here if necessary
+    
     const handlePatientManagementClick = () => {
         console.log('Patient Management feature clicked');
-        // Add further functionality as required
     };
 
     return (
@@ -79,7 +78,6 @@ function AboutUs() {
             <div className="team-section" id="team">
                 <h2>Meet Our Team</h2>
                 <div className="team-cards">
-                    {/* Team member card example */}
                     <div className="team-card">
                       <img src={require('./Images/bh.jpg')} alt="Bhoomika Pathapati photo" className="team-photo"/>
                       <h3>Bhoomika Pathapati</h3>

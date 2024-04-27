@@ -4,7 +4,6 @@ import axios from 'axios';
 
 
 function DoctorDetails() {
-    // Sample doctor details data
     const doctorDetailsData = [
         { id: 1, name: "Dr. John Doe", specialization: "Cardiologist", experience: 15, contact: "123-456-7890", clinicAddress: "123 Street, City, Country" },
         { id: 2, name: "Dr. Jane Smith", specialization: "Dermatologist", experience: 10, contact: "987-654-3210", clinicAddress: "456 Avenue, City, Country" },
@@ -13,22 +12,22 @@ function DoctorDetails() {
         { id: 5, name: "Dr. David Wilson", specialization: "Orthopedic Surgeon", experience: 20, contact: "444-555-6666", clinicAddress: "202 Lane, City, Country" },
     ];
 
-    // State for storing doctor details
+    
     const [doctorDetails, setDoctorDetails] = useState([]);
 
-    // Use useEffect to set the doctor details data
+
     useEffect(() => {
         const fetchDoctorDetails = async () => {
             try {
-                const response = await axios.get('/api/doctors'); // Make GET request to fetch doctor details
-                setDoctorDetails(response.data); // Set doctor details state with data from the response
+                const response = await axios.get('/api/doctors');
+                setDoctorDetails(response.data); 
             } catch (error) {
                 console.error('Error fetching doctor details:', error);
             }
         };
 
         fetchDoctorDetails();
-        // Simulating fetching doctor details from an API endpoint
+        
         setDoctorDetails(doctorDetailsData);
     }, []);
 

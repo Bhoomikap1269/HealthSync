@@ -35,10 +35,9 @@ function SignUp() {
 
         // If there are no errors, submit the form
         if (Object.keys(newErrors).length === 0) {
-            // Handle form submission (e.g., sending data to an API)
+            // Handle form submission
             console.log('Form submitted:', { username, email, password });
 
-            // Navigate to the "About Us" page after successful sign-up
             navigate('/about');
         }
     };
@@ -94,7 +93,6 @@ function SignUp() {
                 <button type="submit" className="submit-button">Sign Up</button>
             </form>
 
-            {/* Link to go back to the front page */}
             <p className="back-to-front">
                 <a href="/" className="back-link"><FaArrowLeft className="icon" /> Back to Home Page</a>
             </p>

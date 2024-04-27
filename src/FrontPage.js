@@ -8,7 +8,7 @@ function FrontPage() {
 
     const handleSignUpClick = () => {
         try {
-            navigate('/signup'); // Navigate to the sign-up page
+            navigate('/signup'); 
         } catch (error) {
             console.error('Error navigating to sign-up page:', error);
         }
@@ -16,7 +16,7 @@ function FrontPage() {
 
     const handleLoginClick = () => {
         try {
-            navigate('/login'); // Navigate to the login page
+            navigate('/login'); 
         } catch (error) {
             console.error('Error navigating to login page:', error);
         }
@@ -24,9 +24,7 @@ function FrontPage() {
 
     return (
         <div className="front-page">
-            {/* Hero section */}
             <div className="hero-section">
-                {/* Centered logo */}
                 <div className="logo-container">
                     <img src={logo} alt="HealthSync Logo" className="logo" />
                 </div>
@@ -34,7 +32,6 @@ function FrontPage() {
                 <h1>Welcome to HealthSync</h1>
                 <p>Streamlining Healthcare Management for Optimal Patient Care</p>
 
-                {/* Authentication buttons */}
                 <div className="auth-buttons">
                     <button className="cta-button" onClick={handleSignUpClick}>
                         Sign Up
@@ -45,7 +42,6 @@ function FrontPage() {
                 </div>
             </div>
 
-            {/* Footer section */}
             <footer className="footer">
                 <h2>Contact Us</h2>
                 <div className="contact-details">
