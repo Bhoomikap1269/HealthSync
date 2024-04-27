@@ -12,7 +12,7 @@ def create_connection():
     try:
         conn = sqlite3.connect('users.db')
         return conn
-    except Error as e:
+    except Error as e: 
         print(e)
     return conn
 

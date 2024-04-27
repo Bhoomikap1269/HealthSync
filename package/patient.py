@@ -1,4 +1,6 @@
 from flask_restful import Resource, Api, request
+import sys
+sys.path.append('/path/to/parent/directory')
 from package.model import conn
 
 class Patients(Resource):
