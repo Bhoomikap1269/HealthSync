@@ -5,6 +5,9 @@ import './Services.css';
 function Services() {
     return (
         <div className="services-container">
+            
+            <Link to="/appointment" className="schedule-appointment-link">Click here to schedule an appointment</Link>
+            
             <h2 className="services-heading">Our Services</h2>
             <div className="service-cards">
                 <div className="service-card">

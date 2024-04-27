@@ -1,6 +1,3 @@
-/* Login.css */
-
-/* Container for the login form */
 .login-container {
     background-color: white;
     padding: 20px;
@@ -10,7 +7,7 @@
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
-/* Form header */
+
 .login-container h2 {
     text-align: center;
     margin-bottom: 20px;
@@ -18,7 +15,7 @@
     font-weight: bold;
 }
 
-/* Form group styles */
+
 .form-group {
     margin-bottom: 15px;
 }
@@ -41,14 +38,14 @@
     border-radius: 4px;
 }
 
-/* Error message styling */
+
 .error {
     color: red;
     font-size: 0.9rem;
     margin-top: 5px;
 }
 
-/* Submit button styling */
+
 .submit-button {
     width: 100%;
     padding: 10px;
@@ -66,7 +63,7 @@
     background-color: #0056b3;
 }
 
-/* Back link styling */
+
 .back-to-front {
     text-align: center;
     margin-top: 20px;

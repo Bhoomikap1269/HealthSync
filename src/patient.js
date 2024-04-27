@@ -1,13 +1,11 @@
-// Assuming you have an API endpoint to fetch patient details
 function fetchPatientDetails() {
-    // Replace with the actual API endpoint
+    
     const apiUrl = '/api/patient/details';
   
     fetch(apiUrl, {
       method: 'GET',
       headers: {
         'Content-Type': 'application/json',
-        // Include authentication headers if necessary
       },
     })
     .then(response => response.json())
@@ -21,15 +19,13 @@ function fetchPatientDetails() {
   }
   
   function displayProfile(profile) {
-    // Update the DOM with patient profile information
     document.getElementById('patientName').textContent = profile.name;
     document.getElementById('patientEmail').textContent = profile.email;
-    // Add more profile fields as needed
   }
   
   function displayMedicalHistory(medicalHistory) {
     const medicalHistoryContainer = document.getElementById('medicalHistory');
-    medicalHistoryContainer.innerHTML = ''; // Clear existing content
+    medicalHistoryContainer.innerHTML = '';
   
     medicalHistory.forEach(historyItem => {
       const item = document.createElement('div');
@@ -46,7 +42,7 @@ function fetchPatientDetails() {
   
   function displayAppointmentHistory(appointmentHistory) {
     const appointmentHistoryContainer = document.getElementById('appointmentHistory');
-    appointmentHistoryContainer.innerHTML = ''; // Clear existing content
+    appointmentHistoryContainer.innerHTML = '';
   
     appointmentHistory.forEach(appointment => {
       const item = document.createElement('div');
@@ -63,7 +59,7 @@ function fetchPatientDetails() {
   
   function displayTestResults(testResults) {
     const testResultsContainer = document.getElementById('testResults');
-    testResultsContainer.innerHTML = ''; // Clear existing content
+    testResultsContainer.innerHTML = '';
   
     testResults.forEach(testResult => {
       const item = document.createElement('div');
@@ -78,5 +74,4 @@ function fetchPatientDetails() {
     });
   }
   
-  // Call this function when the page loads
   fetchPatientDetails();

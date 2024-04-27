@@ -2,7 +2,6 @@ import React from 'react';
 import './PatientDetails.css';
 
 function PatientDetails() {
-    // Sample patient details data
     const patientDetailsData = [
         { id: 1, name: "Alice Smith", age: 35, gender: "Female", contact: "123-456-7890", address: "123 Street, City, Country" },
         { id: 2, name: "Bob Johnson", age: 45, gender: "Male", contact: "987-654-3210", address: "456 Avenue, City, Country" },
